@@ -2,7 +2,11 @@
  * API utilities for interacting with the bookmark manager backend
  */
 
-const API_URL = 'http://localhost:3001/api';
+// Get API URL from environment or use default
+// This allows the API URL to be configured via environment variables when running in Docker
+const apiHostname = window.location.hostname; // Use the same hostname as the frontend
+const apiPort = process.env.REACT_APP_API_PORT || '3001';
+const API_URL = `http://${apiHostname}:${apiPort}/api`;
 
 /**
  * Fetch all bookmarks and folders

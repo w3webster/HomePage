@@ -80,6 +80,46 @@
       "createdAt": "2025-05-08T14:46:22.012Z",
       "modifiedAt": "2025-05-08T14:46:22.012Z",
       "order": 2
+    },
+    {
+      "id": "51d2c31b-b2e3-49e5-b3a1-f6b9994a5941",
+      "title": "Github BackEnd",
+      "url": "https://github.com/miljodir/vann-nett-backend",
+      "folderId": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+      "createdAt": "2025-05-09T07:35:27.088Z",
+      "modifiedAt": "2025-05-09T07:35:27.088Z",
+      "order": 2
+    },
+    {
+      "id": "8471c74a-7e4d-46b4-8f9e-8677911a97ce",
+      "title": "Github FrontEnd",
+      "url": "https://github.com/miljodir/vann-nett",
+      "folderId": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+      "createdAt": "2025-05-09T07:35:51.226Z",
+      "modifiedAt": "2025-05-09T07:35:51.226Z",
+      "order": 3
+    },
+    {
+      "id": "b76b93b0-06bd-4ed3-904f-4a0324d05bcd",
+      "title": "Github Legacy",
+      "url": "https://github.com/miljodir/vann-nett-legacy",
+      "folderId": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+      "createdAt": "2025-05-09T07:36:38.634Z",
+      "modifiedAt": "2025-05-09T07:36:38.634Z",
+      "order": 4
+    },
+    {
+      "id": "a450843a-3c05-4151-936c-891762474cb2",
+      "title": "JIRA Miljodir",
+      "url": "https://miljodir.atlassian.net/jira/software/c/projects/PTVF/boards/265",
+      "folderId": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "icon": "https://www.google.com/s2/favicons?domain=miljodir.atlassian.net&sz=64",
+      "createdAt": "2025-05-09T07:40:42.762Z",
+      "modifiedAt": "2025-05-09T07:40:42.762Z",
+      "order": 5
     }
   ]
 }
