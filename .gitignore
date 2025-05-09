@@ -1,0 +1,51 @@
+# Dependencies
+/node_modules
+/client/node_modules
+/.pnp
+.pnp.js
+
+# Production build files
+/build
+/client/build
+/dist
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE specific files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional npm cache & eslint cache
+.npm
+.eslintcache
+
+# Server data
+/server/data/*.json
+!/server/data/bookmarks.json
+
+# OS files
+.DS_Store
+Thumbs.db

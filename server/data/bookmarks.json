@@ -1,0 +1,85 @@
+{
+  "folders": [
+    {
+      "id": "default",
+      "name": "Default",
+      "order": 0
+    },
+    {
+      "id": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "name": "Vann-nett",
+      "order": 1,
+      "createdAt": "2025-05-08T12:28:34.979Z",
+      "modifiedAt": "2025-05-08T12:28:34.979Z"
+    },
+    {
+      "id": "271b1ffc-4cca-4de7-8865-b19e8bf1d2c1",
+      "name": "AI",
+      "order": 3,
+      "createdAt": "2025-05-08T14:35:31.570Z",
+      "modifiedAt": "2025-05-08T14:35:31.570Z"
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "1ad69698-cf58-4543-a8f0-5d6d8475d396",
+      "title": "NRK",
+      "url": "https://nrk.no",
+      "folderId": "default",
+      "icon": "https://www.google.com/s2/favicons?domain=nrk.no&sz=64",
+      "createdAt": "2025-05-08T12:34:34.851Z",
+      "modifiedAt": "2025-05-08T12:34:34.851Z",
+      "order": 0
+    },
+    {
+      "id": "79ffc398-bf3e-49f1-8f92-0f93faa82202",
+      "title": "Vann-nett",
+      "url": "https://vann-nett.no",
+      "folderId": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "icon": "https://www.google.com/s2/favicons?domain=vann-nett.no&sz=64",
+      "createdAt": "2025-05-08T12:29:01.924Z",
+      "modifiedAt": "2025-05-08T12:29:01.924Z",
+      "order": 0
+    },
+    {
+      "id": "2cc2bbc4-34ed-43c9-baf3-5d7f23338299",
+      "title": "Vann-nett-dev",
+      "url": "https://vann-nett-dev.miljodirektoratet.no/waterbodies/map",
+      "folderId": "ab3347ed-65ab-4ad3-88e4-731102bdd799",
+      "icon": "https://www.google.com/s2/favicons?domain=vann-nett-dev.miljodirektoratet.no&sz=64",
+      "createdAt": "2025-05-08T14:12:18.726Z",
+      "modifiedAt": "2025-05-08T14:12:18.726Z",
+      "order": 0
+    },
+    {
+      "id": "f3602139-168d-4546-a535-4df65ce5ff66",
+      "title": "Chat GPT",
+      "url": "https://chatgpt.com/",
+      "folderId": "271b1ffc-4cca-4de7-8865-b19e8bf1d2c1",
+      "icon": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64",
+      "createdAt": "2025-05-08T14:36:23.485Z",
+      "modifiedAt": "2025-05-08T14:36:23.485Z",
+      "order": 0
+    },
+    {
+      "id": "363e59f7-b577-4bb8-8bde-8320b5bdceb0",
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "folderId": "271b1ffc-4cca-4de7-8865-b19e8bf1d2c1",
+      "icon": "https://www.google.com/s2/favicons?domain=ollama.com&sz=64",
+      "createdAt": "2025-05-08T14:44:40.894Z",
+      "modifiedAt": "2025-05-08T14:44:40.894Z",
+      "order": 1
+    },
+    {
+      "id": "30f900c1-fc7a-4438-b7c9-a0bab42c54c9",
+      "title": "Claude",
+      "url": "https://claude.ai/new",
+      "folderId": "271b1ffc-4cca-4de7-8865-b19e8bf1d2c1",
+      "icon": "https://www.google.com/s2/favicons?domain=claude.ai&sz=64",
+      "createdAt": "2025-05-08T14:46:22.012Z",
+      "modifiedAt": "2025-05-08T14:46:22.012Z",
+      "order": 2
+    }
+  ]
+}

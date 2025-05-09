@@ -1,0 +1,147 @@
+.folder-nav {
+  width: var(--sidebar-width);
+  background-color: var(--color-bg-secondary);
+  border-right: 1px solid var(--color-border);
+  padding: var(--spacing-md);
+  overflow-y: auto;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.folder-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.folder-nav-header h2 {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.add-folder-btn {
+  font-size: var(--font-size-lg);
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.folder-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  position: relative;
+}
+
+.folder-item:hover {
+  background-color: var(--color-bg-tertiary);
+}
+
+.folder-item.active {
+  background-color: var(--color-accent-blue-light);
+  color: white;
+}
+
+.folder-name {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.folder-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: var(--spacing-xs);
+  opacity: 0.7;
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: opacity var(--transition-fast), background-color var(--transition-fast);
+}
+
+.folder-menu-btn:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.folder-item.active .folder-menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.folder-menu {
+  position: absolute;
+  right: var(--spacing-md);
+  top: 100%;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 2px 6px var(--color-shadow);
+  z-index: 10;
+  overflow: hidden;
+  min-width: 120px;
+}
+
+.folder-menu button {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  color: var(--color-text-primary);
+}
+
+.folder-menu button:hover {
+  background-color: var(--color-bg-tertiary);
+}
+
+.folder-menu button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .folder-nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    max-height: 200px;
+  }
+}

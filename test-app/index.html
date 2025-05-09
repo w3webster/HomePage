@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookmarkHome Test</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 800px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #0078D7;
+      margin-top: 0;
+    }
+    button {
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BookmarkHome API Test</h1>
+    <p>Click the buttons below to test the API endpoints:</p>
+    
+    <div>
+      <button onclick="testAPI('/api/bookmarks')">Test Get Bookmarks</button>
+      <button onclick="testAPI('/api/folders')">Test Get Folders</button>
+    </div>
+    
+    <div class="result" id="result">
+      <h3>Response:</h3>
+      <pre id="response"></pre>
+    </div>
+  </div>
+  
+  <script>
+    async function testAPI(endpoint) {
+      const resultDiv = document.getElementById('result');
+      const responseEl = document.getElementById('response');
+      
+      try {
+        resultDiv.style.display = 'block';
+        responseEl.textContent = 'Loading...';
+        
+        const response = await fetch(`http://localhost:3001${endpoint}`);
+        const data = await response.json();
+        
+        responseEl.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        responseEl.textContent = `Error: ${error.message}`;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+:root {
+  /* Metro-inspired colors (dusky grayscale palette) */
+  --color-bg-primary: #F2F2F2;
+  --color-bg-secondary: #E6E6E6;
+  --color-bg-tertiary: #DADADA;
+  
+  --color-text-primary: #333333;
+  --color-text-secondary: #555555;
+  --color-text-muted: #777777;
+  
+  --color-border: #CCCCCC;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Accent colors (muted) */
+  --color-accent-blue: #0078D7;
+  --color-accent-blue-light: #5CA3E6;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Typography */
+  --font-family-primary: 'Segoe UI', 'Roboto', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  
+  /* Border radius */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 6px;
+  
+  /* Animation */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  
+  /* Layout */
+  --header-height: 60px;
+  --sidebar-width: 240px;
+  --tile-size: 160px;
+  --tile-gap: 16px;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #1E1E1E;
+    --color-bg-secondary: #252525;
+    --color-bg-tertiary: #333333;
+    
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #CCCCCC;
+    --color-text-muted: #999999;
+    
+    --color-border: #444444;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+    
+    --color-accent-blue: #0078D7;
+    --color-accent-blue-light: #4296D7;
+  }
+}
